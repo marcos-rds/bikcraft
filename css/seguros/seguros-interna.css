@@ -1,0 +1,67 @@
+/* TITULO */
+
+#seguros .seguros {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#seguros .titulo-bg {
+  padding-bottom: 0px;
+}
+
+/* VANTAGENS */
+
+.seguro-vantagens-bg {
+  background: var(--cor-12);
+}
+.seguro-vantagens {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.seguro-vantagens h2 {
+  margin-bottom: 60px;
+}
+.seguro-vantagens ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px 40px;
+  align-items: center;
+}
+.seguro-vantagens ul li img,
+.seguro-vantagens ul li h3 {
+  margin-bottom: 8px;
+}
+
+/* PERGUNTAS FREQUENTES */
+
+.seguro-perguntas {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.seguro-perguntas h2 {
+  margin-bottom: 60px;
+}
+.seguro-perguntas h3 {
+  margin-bottom: 16px;
+  position: relative;
+}
+.seguro-perguntas h3::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+
+.seguro-perguntas ul li {
+  padding: 20px 20px 20px 40px;
+  border-radius: 5px;
+}
+.seguro-perguntas ul li p {
+  max-width: 75ch;
+}
+
+.seguro-perguntas ul li:nth-child(odd) {
+  background: var(--cor-1);
+}
