@@ -1,0 +1,75 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-p1);
+}
+.depoimento blockquote p {
+  display: block;
+  max-width: 550px;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.25;
+  margin-bottom: 32px;
+  position: relative;
+}
+.depoimento p::before {
+  content: "“";
+  font-size: 5rem;
+  color: var(--cor-p2);
+  position: absolute;
+  left: -50px;
+  top: -25px;
+}
+.depoimento p::after {
+  content: "”";
+  font-size: 5rem;
+  color: var(--cor-p2);
+  position: absolute;
+}
+.depoimento img {
+  border-radius: initial;
+  max-height: 680px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.depoimento-texto {
+  align-self: end;
+  padding: 40px 40px 80px 80px;
+  position: relative;
+}
+.depoimento-texto::after {
+  content: url(../../img/dec/bottom-right-p.svg);
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+  }
+  .depoimento blockquote p {
+    max-width: 400px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .depoimento img {
+    height: 200px;
+  }
+  .depoimento-texto {
+    margin: auto;
+    display: block;
+    padding: 40px;
+  }
+  .depoimento-texto > span {
+    display: flex;
+    justify-content: center;
+  }
+  .depoimento-texto::after {
+    bottom: 20px;
+    right: 20px;
+  }
+}

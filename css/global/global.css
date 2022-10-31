@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  /* para fazer scroll da página */
+  /* padding-bottom: 600px; */
+  color: var(--cor-11);
+}
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+img[src$=".jpg"] {
+  border-radius: 5px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  font: inherit;
+}

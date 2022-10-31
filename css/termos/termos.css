@@ -1,0 +1,22 @@
+.termos {
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+.termos > ol > li {
+  margin-bottom: 20px;
+  font-weight: 600;
+  list-style-position: inside;
+}
+.termos ul li {
+  margin-bottom: 24px;
+  max-width: 75ch;
+}
+.termos ul li:last-child {
+  margin-bottom: 48px;
+}
+@media (max-width: 800px) {
+  .termos {
+    padding-top: 60px;
+    padding-bottom: 12px;
+  }
+}
