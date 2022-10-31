@@ -1,0 +1,22 @@
+/* VANTAGENS */
+
+.seguro-vantagens-bg {
+  background: var(--cor-12);
+}
+.seguro-vantagens {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.seguro-vantagens h2 {
+  margin-bottom: 60px;
+}
+.seguro-vantagens ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px;
+}
+.seguro-vantagens ul li img,
+.seguro-vantagens ul li h3 {
+  margin-bottom: 8px;
+  align-self: center;
+}
