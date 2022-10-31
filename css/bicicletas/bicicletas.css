@@ -51,6 +51,7 @@
   min-height: 352px;
 }
 .bicicleta-foto > span {
+  display: inline-block;
   background-color: var(--cor-12);
   padding: 8px 20px 8px 8px;
   border-radius: 5px 0px 0px 5px;
@@ -64,6 +65,9 @@
 @media (max-width: 800px) {
   .bicicleta-conteudo {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .bicicletas {
     padding-top: 0px;
@@ -84,5 +88,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 1rem;
+    margin-bottom: 32px;
+    gap: 16px;
+  }
+  .bicicleta-caracteristicas ul li {
+    margin-bottom: 0px;
+  }
+  .bicicleta-conteudo p {
+    margin-bottom: 20px;
   }
 }
