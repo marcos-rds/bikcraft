@@ -45,3 +45,13 @@
   max-width: 80ch;
   padding-left: 20px;
 }
+
+@media (max-width: 800px) {
+  .seguro-perguntas {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .seguro-perguntas h2 {
+    margin-bottom: 40px;
+  }
+}

@@ -20,3 +20,12 @@
   margin-bottom: 8px;
   align-self: center;
 }
+@media (max-width: 800px) {
+  .seguro-vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .seguro-vantagens h2 {
+    margin-bottom: 40px;
+  }
+}

@@ -7,16 +7,3 @@
 #seguros .titulo-bg {
   padding-bottom: 0px;
 }
-
-/* RESPONSIVO */
-
-@media (max-width: 800px) {
-  .seguro-vantagens,
-  .seguro-perguntas {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .seguro-vantagens h2 {
-    margin-bottom: 40px;
-  }
-}
