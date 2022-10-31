@@ -37,6 +37,7 @@ nav a:hover:after {
 @media (max-width: 800px) {
   nav a {
     background-color: var(--cor-11);
+    transition: 0.3s;
     padding: 12px 16px;
     border-radius: 4px;
   }
