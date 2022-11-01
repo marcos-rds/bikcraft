@@ -59,3 +59,25 @@
   margin-bottom: 8px;
   font-weight: 500;
 }
+
+.bicicletas-ficha {
+  padding: 32px;
+  background: var(--cor-12);
+  border-radius: 5px;
+}
+.bicicletas-ficha ul li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.bicicletas-ficha ul li + li {
+  margin-top: 12px;
+}
+.bicicletas-ficha ul li + li::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--cor-11);
+  position: absolute;
+  top: -7px;
+}
