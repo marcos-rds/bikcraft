@@ -31,6 +31,6 @@ ul {
 ul li {
   font: inherit;
 }
-h2 span {
-  font-family: "Times New Roman", Times, serif;
+span {
+  font: inherit;
 }

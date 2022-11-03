@@ -2,9 +2,6 @@
   background: var(--cor-11);
   box-shadow: inset 0 120px 0 #ffffff, inset 0 -120px 0 #000000;
 }
-#bicicleta-interna .bicicletas-seguro h2 span {
-  font-family: "Poppins", sans-serif;
-}
 .bicicletas-seguro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -23,9 +20,23 @@
 }
 .bicicletas-seguro > div img {
   height: 100%;
-  width: auto;
+  width: 100%;
   object-fit: cover;
 }
-/* #bicicleta-interna .bicicletas-seguro.container {
-  max-width: 1320px;
-} */
+
+@media (max-width: 800px) {
+  .bicicletas-seguro {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-seguro div:nth-child(2) {
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  .bicicletas-seguro-bg {
+    box-shadow: inset 0 -60px 0 #000000;
+  }
+  .bicicletas-seguro > div img {
+    max-height: 400px;
+  }
+}
