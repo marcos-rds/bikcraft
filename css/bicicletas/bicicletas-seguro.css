@@ -7,7 +7,7 @@
 }
 .bicicletas-seguro {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
 .bicicletas-seguro h2 {
@@ -26,6 +26,6 @@
   width: auto;
   object-fit: cover;
 }
-#bicicleta-interna .bicicletas-seguro.container {
+/* #bicicleta-interna .bicicletas-seguro.container {
   max-width: 1320px;
-}
+} */
