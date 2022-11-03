@@ -1,10 +1,11 @@
-#nimbus h1 {
+#bicicleta-interna h1 {
   margin-bottom: 60px;
 }
 .bicicletas-conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  padding-bottom: 60px;
 }
 .bicicletas-fotos > div:nth-child(1) {
   margin-bottom: 20px;
@@ -80,4 +81,18 @@
   background: var(--cor-11);
   position: absolute;
   top: -7px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+  #bicicleta-interna h1 {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .bicicletas-informacoes ul {
+    grid-template-columns: 1fr;
+  }
 }

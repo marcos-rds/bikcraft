@@ -4,6 +4,7 @@
   font: 600 1.125rem/1.333 "Poppins", sans-serif;
   display: inline-block;
   padding: 16px 32px;
+  text-align: center;
   background-image: linear-gradient(#ffbf00, #f2a50c);
   text-transform: uppercase;
   color: var(--cor-p5);
