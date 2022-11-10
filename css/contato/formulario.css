@@ -1,0 +1,87 @@
+.contato-box-bg {
+  background: linear-gradient(to bottom, var(--cor-11) 50%, var(--cor-0) 50%);
+}
+.contato-box {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+.contato-informacoes {
+  background: var(--cor-12);
+  padding: 60px;
+}
+.contato-informacoes h2 {
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+.contato-formulario {
+  background: var(--cor-0);
+  padding: 60px;
+}
+.contato-endereco,
+.contato-email,
+.contato-telefone {
+  position: relative;
+  padding-left: 28px;
+}
+.contato-endereco::before {
+  content: url(../../img/icones/contato/local.svg);
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.contato-email::before {
+  content: url(../../img/icones/contato/email.svg);
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.contato-telefone::before {
+  content: url(../../img/icones/contato/telefone.svg);
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.contato-endereco,
+.contato-email {
+  margin-bottom: 32px;
+}
+.contato-telefone {
+  margin-bottom: 60px;
+}
+.contato-redes {
+  display: flex;
+  gap: 32px;
+}
+.contato-formulario label,
+.contato-formulario input {
+  display: block;
+  width: 100%;
+}
+.contato-formulario label {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.contato-formulario input:not(.botao) {
+  margin-bottom: 20px;
+  height: 48px;
+  background: var(--cor-1);
+  border-radius: 5px;
+  border: 1px solid #ededed;
+}
+.contato-formulario input:active {
+  border: 1px solid #ffbb00;
+  box-shadow: 0px 0px 0px 1px #ffeebe;
+}
+
+.contato-formulario .botao {
+  border: initial;
+  width: max-content;
+}
+.nome-telefone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+#mensagem {
+  height: 120px;
+}

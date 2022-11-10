@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body id="contato">
@@ -34,41 +34,50 @@
                 <h1 class="font-1-xxl cor-0">nosso contato<span class="cor-p1">.</span></h1>
             </div>
         </section>
-        <section class="contato-box">
-            <div class="contato-informacoes">
-                <h2>Loja Online</h2>
+        <section class="contato-box-bg">
+            <div class="contato-box container">
+                <div class="contato-informacoes">
+                    <h2 class="font-1-m-b cor-0">Loja Online</h2>
 
-                <ul class="contato-endereco font-2-s cor-4">
-                    <li>Rua Ali Perto, 35</li>
-                    <li>Rio de Janeiro</li>
-                    <li>Brasil - Terra - Via Láctea</li>
-                </ul>
+                    <ul class="contato-endereco font-2-s cor-4">
+                        <li>Rua Ali Perto, 35</li>
+                        <li>Rio de Janeiro</li>
+                        <li>Brasil - Terra - Via Láctea</li>
+                    </ul>
 
-                <div class="contato-email">
-                    <a href="mail:contato@bikcraft.com">contato@bikcraft.com</a>
-                    <a href="mail:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+                    <div class="contato-email font-2-s cor-4">
+                        <a href="mail:contato@bikcraft.com">contato@bikcraft.com</a>
+                        <a href="mail:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+                    </div>
+
+                    <div class="contato-telefone font-2-s cor-4">
+                        <a href="tel:+551199999999">+55 11 9999-9999</a>
+                    </div>
+                    <div class="contato-redes">
+                        <a href="./"><img src="./img/icones/redes-sociais/instagram-p.svg" alt=""></a>
+                        <a href="./"><img src="./img/icones/redes-sociais/facebook-p.svg" alt=""></a>
+                        <a href="./"><img src="./img/icones/redes-sociais/youtube-p.svg" alt=""></a>
+                    </div>
                 </div>
-
-                <div class="contato-telefone">
-                    <a href="tel:+551199999999">+55 11 9999-9999</a>
+                <div class="contato-formulario">
+                    <form class="font-1-s cor-11" action="cadastro.php" method="post" autocomplete="off">
+                        <div class="nome-telefone font-1-s cor-11">
+                            <div>
+                                <label class="nome-telefone font-1-s cor-11" for="nome">Nome:</label>
+                                <input class="font-2-s cor-7" type="text" name="nome" id="nome">
+                            </div>
+                            <div>
+                                <label class="nome-telefone font-1-s cor-11" for="telefone">Telefone:</label>
+                                <input class="font-2-s cor-7" type="telefone" name="telefone" id="telefone">
+                            </div>
+                        </div>
+                        <label for="email">Email:</label>
+                        <input class="font-2-s cor-7" type="email" name="email" id="email">
+                        <label for="mensagem">Mensagem:</label>
+                        <input class="font-2-s cor-7" type="text" name="mensagem" id="mensagem">
+                        <input class="botao" type="submit" value="Enviar Mensagem">
+                    </form>
                 </div>
-
-                <div class="contato-redes">
-                    <a href="./"><img src="./img/icones/redes-sociais/instagram-p.svg" alt=""></a>
-                    <a href="./"><img src="./img/icones/redes-sociais/facebook-p.svg" alt=""></a>
-                    <a href="./"><img src="./img/icones/redes-sociais/youtube-p.svg" alt=""></a>
-                </div>
-            </div>
-            <div class="contato-formulario">
-                <form action="cadastro.php" method="post" autocomplete="off">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                    <label for="nome">Mensagem:</label>
-                    <input type="text" name="mensagem" id="mensagem">
-                    <input class="botao" type="submit" value="Enviar Mensagem">
-                </form>
             </div>
         </section>
         <footer>

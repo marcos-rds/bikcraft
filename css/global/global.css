@@ -28,9 +28,8 @@ img[src$=".jpg"] {
 ul {
   list-style: none;
 }
-ul li {
-  font: inherit;
-}
-span {
+ul li,
+span,
+label {
   font: inherit;
 }
