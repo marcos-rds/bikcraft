@@ -95,9 +95,6 @@ textarea {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-#mensagem {
-  height: 120px;
-}
 .contato-formulario input:focus,
 .contato-formulario textarea:focus {
   border: 1px solid #ffbb00;
@@ -108,6 +105,7 @@ textarea {
 @media (max-width: 800px) {
   .contato-box {
     grid-template-columns: 1fr;
+    margin-bottom: 60px;
   }
   .contato-informacoes {
     border-radius: 5px 5px 0px 0px;

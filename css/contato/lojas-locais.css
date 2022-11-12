@@ -23,6 +23,8 @@
 }
 .contato-lojas > div > img {
   border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
+  min-height: 200px;
 }
 .contato-lojas ul {
   margin-left: 24px;
@@ -41,8 +43,8 @@
 .loja-box {
   background: var(--cor-0);
   border-radius: 0px 0px 5px 5px;
-  margin-bottom: 120px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 120px;
 }
 .loja-box span {
   display: flex;
@@ -52,4 +54,28 @@
 }
 .loja-box span img {
   display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .contato-lojas {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contato-lojas h2 {
+    margin-bottom: 0px;
+  }
+  .loja-box {
+    margin-bottom: 0px;
+  }
+  .loja-box + .loja-box {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .loja-box > div {
+    padding: 20px;
+  }
+  .contato-lojas ul {
+    grid-template-columns: 1fr;
+  }
 }
