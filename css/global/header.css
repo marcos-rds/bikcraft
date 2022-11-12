@@ -18,6 +18,7 @@ nav a {
   display: inline-block;
   padding: 16px 0;
   position: relative;
+  font: 400;
 }
 nav a:after {
   content: "";
@@ -49,6 +50,11 @@ nav a:hover:after {
   }
   nav a:after {
     display: none;
+  }
+}
+@media (max-width: 600px) {
+  nav a {
+    font: 400 1rem/1.333 "Poppins", sans-serif !important;
   }
 }
 @media (max-width: 400px) {

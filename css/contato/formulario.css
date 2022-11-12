@@ -1,21 +1,35 @@
+#contato main {
+  background: var(--cor-1);
+}
 .contato-box-bg {
-  background: linear-gradient(to bottom, var(--cor-11) 50%, var(--cor-0) 50%);
+  background: linear-gradient(to bottom, var(--cor-11) 50%, var(--cor-1) 50%);
 }
 .contato-box {
   display: grid;
   grid-template-columns: 5fr 7fr;
+  margin-bottom: 120px;
 }
 .contato-informacoes {
   background: var(--cor-12);
   padding: 60px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 0px 0px 5px;
 }
 .contato-informacoes h2 {
   font-weight: 500;
   margin-bottom: 60px;
 }
+.contato-informacoes a {
+  display: block;
+}
+.contato-informacoes a:hover {
+  color: var(--cor-0);
+}
 .contato-formulario {
   background: var(--cor-0);
   padding: 60px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 5px 5px 0px;
 }
 .contato-endereco,
 .contato-email,
@@ -23,6 +37,7 @@
   position: relative;
   padding-left: 28px;
 }
+
 .contato-endereco::before {
   content: url(../../img/icones/contato/local.svg);
   position: absolute;
@@ -53,7 +68,8 @@
   gap: 32px;
 }
 .contato-formulario label,
-.contato-formulario input {
+.contato-formulario input,
+textarea {
   display: block;
   width: 100%;
 }
@@ -61,21 +77,18 @@
   margin-bottom: 4px;
   font-weight: 500;
 }
-.contato-formulario input:not(.botao) {
+.contato-formulario input:not(.botao),
+.contato-formulario textarea {
   margin-bottom: 20px;
-  height: 48px;
   background: var(--cor-1);
   border-radius: 5px;
   border: 1px solid #ededed;
+  padding: 12px;
+  box-sizing: border-box;
 }
-.contato-formulario input:active {
-  border: 1px solid #ffbb00;
-  box-shadow: 0px 0px 0px 1px #ffeebe;
-}
-
 .contato-formulario .botao {
   border: initial;
-  width: max-content;
+  width: fit-content;
 }
 .nome-telefone {
   display: grid;
@@ -84,4 +97,33 @@
 }
 #mensagem {
   height: 120px;
+}
+.contato-formulario input:focus,
+.contato-formulario textarea:focus {
+  border: 1px solid #ffbb00;
+  box-shadow: 0px 0px 0px 2px #ffeebe;
+  background: var(--cor-0);
+  outline: 0;
+}
+@media (max-width: 800px) {
+  .contato-box {
+    grid-template-columns: 1fr;
+  }
+  .contato-informacoes {
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px;
+  }
+  .contato-formulario {
+    border-radius: 0px 0px 5px 5px;
+    padding: 20px;
+  }
+  .contato-box-bg {
+    background: linear-gradient(to bottom, var(--cor-11) 40%, var(--cor-1) 40%);
+  }
+}
+@media (max-width: 600px) {
+  .nome-telefone {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
 }
