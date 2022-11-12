@@ -5,6 +5,7 @@
 @import "./utilidades/cores.css";
 
 /* Utilidades */
+@import "./utilidades/formulario.css";
 @import "./utilidades/componentes.css";
 
 /* Home */
@@ -29,5 +30,5 @@
 @import "./seguros/vantagens.css";
 
 /* Contato */
-@import "./contato/formulario.css";
+@import "./contato/contato.css";
 @import "./contato/lojas-locais.css";

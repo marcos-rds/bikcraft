@@ -45,36 +45,38 @@
                         <li>Brasil - Terra - Via Láctea</li>
                     </ul>
 
-                    <div class="contato-email font-2-s cor-4">
+                    <address class="contato-email font-2-s cor-4">
                         <a href="mail:contato@bikcraft.com">contato@bikcraft.com</a>
                         <a href="mail:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
-                    </div>
+                    </address>
 
-                    <div class="contato-telefone font-2-s cor-4">
+                    <address class="contato-telefone font-2-s cor-4">
                         <a href="tel:+551199999999">+55 11 9999-9999</a>
-                    </div>
+                    </address>
+
                     <div class="contato-redes">
                         <a href="./"><img src="./img/icones/redes-sociais/instagram-p.svg" alt=""></a>
                         <a href="./"><img src="./img/icones/redes-sociais/facebook-p.svg" alt=""></a>
                         <a href="./"><img src="./img/icones/redes-sociais/youtube-p.svg" alt=""></a>
                     </div>
+
                 </div>
                 <div class="contato-formulario">
-                    <form class="font-1-s cor-11" action="cadastro.php" method="post" autocomplete="off">
-                        <div class="nome-telefone font-1-s cor-11">
+                    <form class="form" action="./cadastro.php" method="post" autocomplete="off">
+                        <div class="nome-telefone">
                             <div>
-                                <label class="nome-telefone font-1-s cor-11" for="nome">Nome:</label>
-                                <input class="font-2-s cor-7" type="text" name="nome" id="nome" placeholder="Seu nome">
+                                <label class="nome-telefone" for="nome">Nome:</label>
+                                <input type="text" name="nome" id="nome" placeholder="Seu nome">
                             </div>
                             <div>
-                                <label class="nome-telefone font-1-s cor-11" for="telefone">Telefone:</label>
-                                <input class="font-2-s cor-7" type="telefone" name="telefone" id="telefone" placeholder="(11) 9999-9999">
+                                <label class="nome-telefone" for="telefone">Telefone:</label>
+                                <input type="telefone" name="telefone" id="telefone" placeholder="(11) 9999-9999">
                             </div>
                         </div>
                         <label for="email">Email:</label>
-                        <input class="font-2-s cor-7" type="email" name="email" id="email" placeholder="contato@email.com">
+                        <input type="email" name="email" id="email" placeholder="contato@email.com">
                         <label for="mensagem">Mensagem:</label>
-                        <textarea class="font-2-s cor-7" name="mensagem" id="mensagem" rows="4" placeholder="O que você precisa?"></textarea>
+                        <textarea name="mensagem" id="mensagem" rows="4" placeholder="O que você precisa?"></textarea>
                         <input class="botao" type="submit" value="Enviar Mensagem">
                     </form>
                 </div>
