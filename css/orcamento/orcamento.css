@@ -1,0 +1,37 @@
+.orcamento-bg {
+  background: linear-gradient(
+    to bottom,
+    var(--cor-11) 300px,
+    var(--cor-1) 300px
+  );
+}
+.orcamento-box {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+.orcamento-box h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  margin-bottom: 20px;
+}
+.orcamento-escolha,
+.orcamento-dados {
+  padding: 60px;
+}
+.orcamento-escolha {
+  background: var(--cor-12);
+}
+.orcamento-dados {
+  background: var(--cor-0);
+}
+#orcamento .form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+#orcamento .form h2,
+#orcamento .form :nth-child(4),
+#orcamento .form :nth-child(5) {
+  grid-column: 1/-1;
+}
